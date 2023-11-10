@@ -1,0 +1,88 @@
+
+.gridcontacto{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:"formulario redes"
+}
+
+/*CONTACTO*/
+.containerformulario {
+    width: 1000px;
+    grid-area: formulario;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 30px;
+    border: 1px solid;
+  }
+  .titulocontacto{
+    font-family: "BebasNeue";
+  }
+
+  label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 98%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+.redes_sociales{
+    width:600px;
+    border: 1px solid;
+    padding: 10px;
+    grid-area: redes;
+    position: absolute;
+    margin-top:60px ;
+    margin-left:200px ;
+}
+section h2{
+    font-family: "BebasNeue";
+    font-size: 40px;
+}
+section p{
+    font-size: 20px;
+}
+
+section a{
+    text-decoration: 0;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+.face{
+    width: 30px;
+    padding-top: 10px;
+
+}
+.insta{
+    width: 30px;
+    padding-top: 10px;
+
+}

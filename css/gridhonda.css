@@ -1,0 +1,284 @@
+.gridsecciones{
+    display: grid;
+grid-template-columns: auto;
+grid-template-areas:
+"banneraccord"
+"accord"
+"bannerprelude"
+"prelude"
+"bannercivic"
+"civic" ;
+border: 1px solid black;
+}
+
+/*BANNER ACCORD*/
+.banneraccord{
+grid-area: banneraccord;
+background-color: rgb(207, 207, 207);
+width: 100%;
+height: 90px;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+}
+.fotobanneraccord{
+width: 300px;
+margin-left: 800px;
+margin-top: 15px;
+}
+
+/*ACCORD SECCION*/
+.accordseccion{
+background-color: rgb(255, 255, 255);
+padding-bottom: 10px;
+padding-right: 10px;
+grid-area: accord;
+display: grid;
+grid-template-columns: auto 300px auto;
+grid-template-areas:
+"parrafoaccord accord1 principalaccord principalaccord"
+"parrafoaccord accord2 principalaccord principalaccord"
+"parrafoaccord accord3 none none" ;
+}
+
+.imagen_accord{
+width: 800px;
+margin-top: 90px;
+border: 4px solid rgb(0, 0, 0);
+grid-area:principalaccord;
+margin-left: 300px;
+}
+.imagen_accord2{
+width: 800px;
+margin-top:70px;
+border: 4px solid rgb(0, 0, 0);
+margin-left:300px;
+
+grid-area:principalaccord;
+}
+.parrafoaccord{
+grid-area: parrafoaccord;
+color: rgb(0, 0, 0);
+margin-top: 50px;
+width: 400px;
+margin-left: 20px;
+font-size: 20px;
+}
+section .parrafoaccord p{
+border: 1px solid rgb(0, 0, 0);
+padding: 10px;
+}
+
+.tituloaccord{
+grid-area: parrafoaccord;
+color: rgb(0, 0, 0);
+margin-left: 20px;
+font-family:'BebasNeue';
+font-size: 40px;
+}
+
+.accord1{
+width: 400px;
+grid-area: accord1;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 40px;
+margin-left: 90px;
+
+}
+.accord2{
+width: 400px;
+grid-area: accord2;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 20px;
+margin-left: 90px;
+
+}
+.accord3{
+width: 400px;
+grid-area: accord3;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 20px;
+margin-left: 90px;
+}
+
+
+
+
+
+
+/*PRELUDE*/
+.bannerprelude{
+grid-area: bannerprelude;
+background-color: rgb(207, 207, 207);
+width: 100%;
+height: 90px;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+}
+.fotobannerprelude{
+width: 200px;
+margin-left: 840px;
+margin-top: 27px;
+}
+
+
+.preludeseccion{
+background-color: rgb(255, 255, 255);
+padding-bottom: 10px;
+padding-right: 10px;
+grid-area: prelude;
+display: grid;
+grid-template-columns: auto 300px auto;
+grid-template-areas:
+"parrafoprelude prelude1 principalprelude principalprelude"
+"parrafoprelude prelude2 principalprelude principalprelude"
+"parrafoprelude prelude3 none none" ;
+}
+.imagen_prelude{
+width: 800px;
+margin-top: 10px;
+border: 4px solid rgb(0, 0, 0);
+grid-area:principalprelude;
+margin-left: 300px;
+}
+.imagen_prelude2{
+width: 800px;
+margin-top:10px;
+border: 4px solid rgb(0, 0, 0);
+margin-left:300px;
+grid-area:principalprelude;
+}
+.parrafoprelude{
+grid-area: parrafoprelude;
+color: rgb(0, 0, 0);
+margin-top: 50px;
+width: 400px;
+margin-left: 20px;
+font-size: 20px;
+}
+section .parrafoprelude p{
+border: 1px solid rgb(0, 0, 0);
+padding: 10px;
+}
+
+.tituloprelude{
+grid-area: parrafoprelude;
+color: rgb(0, 0, 0);
+margin-left: 20px;
+font-family:'BebasNeue';
+font-size: 40px;
+}
+.prelude1{
+width: 400px;
+grid-area: prelude1;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 40px;
+margin-left: 90px;
+
+}
+.prelude2{
+width: 400px;
+grid-area: prelude2;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 80px;
+margin-left: 90px;
+
+}
+.prelude3{
+width: 400px;
+grid-area: prelude3;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 80px;
+margin-left: 90px;
+}
+
+
+
+
+/*CIVIC*/
+.bannercivic{
+grid-area: bannercivic;
+background-color: rgb(207, 207, 207);
+width: 100%;
+height: 90px;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+}
+.fotobannercivic{
+width: 150px;
+margin-left: 860px;
+margin-top: 21px;
+}
+
+.civicseccion{
+grid-area: civic;
+background-color: rgb(255, 255, 255);
+padding-bottom: 10px;
+padding-right: 10px;
+grid-area: civic;
+display: grid;
+grid-template-columns: auto 300px auto;
+grid-template-areas:
+"parrafocivic civic1 principalcivic principalcivic"
+"parrafocivic civic2 principalcivic principalcivic"
+"parrafocivic civic3 none none" ;
+}
+.imagen_civic1{
+width: 800px;
+margin-top: 10px;
+border: 4px solid rgb(0, 0, 0);
+grid-area:principalcivic;
+margin-left: 300px;
+}
+.imagen_civic2{
+width: 800px;
+margin-top:50px;
+border: 4px solid rgb(0, 0, 0);
+margin-left:300px;
+grid-area:principalcivic;
+}
+.parrafocivic{
+grid-area: parrafocivic;
+color: rgb(0, 0, 0);
+margin-top: 50px;
+width: 400px;
+margin-left: 20px;
+font-size: 20px;
+}
+section .parrafocivic p{
+border: 1px solid rgb(0, 0, 0);
+padding: 10px;
+}
+
+.titulocivic{
+grid-area: parrafocivic;
+color: rgb(0, 0, 0);
+margin-left: 20px;
+font-family:'BebasNeue';
+font-size: 40px;
+
+
+}
+
+.civic1{
+width: 400px;
+grid-area: civic1;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 40px;
+margin-left: 90px;
+
+}
+.civic2{
+width: 400px;
+grid-area: civic2;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 40px;
+margin-left: 90px;
+
+}
+.civic3{
+width: 400px;
+grid-area: civic3;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 40px;
+margin-left: 90px;
+}

@@ -1,0 +1,282 @@
+.gridsecciones{
+    display: grid;
+grid-template-columns: auto;
+grid-template-areas:
+"bannersupra"
+"supra"
+"bannerchaser"
+"chaser"
+"bannerae86"
+"ae" ;
+border: 1px solid black;
+}
+
+/*BANNER SUPRA*/
+.bannersupra{
+grid-area: bannersupra;
+background-color: rgb(207, 207, 207);
+width: 100%;
+height: 90px;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+}
+.fotobannersupra{
+width: 220px;
+margin-left: 820px;
+margin-top: 15px;
+}
+
+/*SUPRA SECCION*/
+.supraseccion{
+background-color: rgb(255, 255, 255);
+padding-bottom: 10px;
+padding-right: 10px;
+grid-area: supra;
+display: grid;
+grid-template-columns: auto 300px auto;
+grid-template-areas:
+"parrafosupra supra1 principalsupra principalsupra"
+"parrafosupra supra2 principalsupra principalsupra"
+"parrafosupra supra3 none none" ;
+}
+
+.imagen_supra{
+width: 800px;
+margin-top: 30px;
+border: 4px solid rgb(0, 0, 0);
+grid-area:principalsupra;
+margin-left: 300px;
+}
+.imagen_supra2{
+width: 800px;
+margin-top:30px;
+border: 4px solid rgb(0, 0, 0);
+margin-left:300px;
+grid-area:principalsupra;
+}
+.parrafosupra{
+grid-area: parrafosupra;
+color: rgb(0, 0, 0);
+margin-top: 50px;
+width: 400px;
+margin-left: 20px;
+font-size: 20px;
+}
+section .parrafosupra p{
+border: 1px solid rgb(0, 0, 0);
+padding: 10px;
+}
+
+.titulosupra{
+grid-area: parrafosupra;
+color: rgb(0, 0, 0);
+margin-left: 20px;
+font-family:'BebasNeue';
+font-size: 40px;
+}
+
+.supra1{
+width: 400px;
+grid-area: supra1;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 40px;
+margin-left: 90px;
+
+}
+.supra2{
+width: 400px;
+grid-area: supra2;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 20px;
+margin-left: 90px;
+
+}
+.supra3{
+width: 400px;
+grid-area: supra3;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 20px;
+margin-left: 90px;
+}
+
+
+
+
+
+
+/*CHASER*/
+.bannerchaser{
+grid-area: bannerchaser;
+background-color: rgb(207, 207, 207);
+width: 100%;
+height: 90px;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+}
+.fotobannerchaser{
+width: 200px;
+margin-left: 840px;
+margin-top: 1px;
+}
+
+
+.chaserseccion{
+background-color: rgb(255, 255, 255);
+padding-bottom: 10px;
+padding-right: 10px;
+grid-area: chaser;
+display: grid;
+grid-template-columns: auto 300px auto;
+grid-template-areas:
+"parrafochaser chaser1 principalchaser principalchaser"
+"parrafochaser chaser2 principalchaser principalchaser"
+"parrafochaser chaser3 none none" ;
+}
+.imagen_chaser{
+width: 800px;
+margin-top: 10px;
+border: 4px solid rgb(0, 0, 0);
+grid-area:principalchaser;
+margin-left: 300px;
+}
+.imagen_chaser2{
+width: 800px;
+margin-top:10px;
+border: 4px solid rgb(0, 0, 0);
+margin-left:300px;
+grid-area:principalchaser;
+}
+.parrafochaser{
+grid-area: parrafochaser;
+color: rgb(0, 0, 0);
+margin-top: 50px;
+width: 400px;
+margin-left: 20px;
+font-size: 20px;
+}
+section .parrafochaser p{
+border: 1px solid rgb(0, 0, 0);
+padding: 10px;
+}
+
+.titulochaser{
+grid-area: parrafochaser;
+color: rgb(0, 0, 0);
+margin-left: 20px;
+font-family:'BebasNeue';
+font-size: 40px;
+}
+.chaser1{
+width: 400px;
+grid-area: chaser1;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 40px;
+margin-left: 90px;
+
+}
+.chaser2{
+width: 400px;
+grid-area: chaser2;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 80px;
+margin-left: 90px;
+
+}
+.chaser3{
+width: 400px;
+grid-area: chaser3;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 80px;
+margin-left: 90px;
+}
+
+
+
+
+/*AE86*/ 
+.bannerae86{
+grid-area: bannerae86;
+background-color: rgb(207, 207, 207);
+width: 100%;
+height: 90px;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+}
+.fotobannerae86{
+width: 150px;
+margin-left: 870px;
+margin-top: 25px;
+}
+
+.ae86seccion{
+background-color: rgb(255, 255, 255);
+padding-bottom: 10px;
+padding-right: 10px;
+grid-area: ae;
+display: grid;
+grid-template-columns: auto 300px auto;
+grid-template-areas:
+"parrafoae86 ae861 principalae86 principalae86"
+"parrafoae86 ae862 principalae86 principalae86"
+"parrafoae86 ae863 none none" ;
+}
+.imagen_ae{
+width: 800px;
+margin-top: 10px;
+border: 4px solid rgb(0, 0, 0);
+grid-area:principalae86;
+margin-left: 300px;
+}
+.imagen_ae2{
+width: 800px;
+margin-top:10px;
+border: 4px solid rgb(0, 0, 0);
+margin-left:300px;
+grid-area:principalae86;
+}
+.parrafoae86{
+grid-area: parrafoae86;
+color: rgb(0, 0, 0);
+margin-top: 50px;
+width: 400px;
+margin-left: 20px;
+font-size: 20px;
+}
+section .parrafoae86 p{
+border: 1px solid rgb(0, 0, 0);
+padding: 10px;
+}
+
+.tituloae86{
+grid-area: parrafoae86;
+color: rgb(0, 0, 0);
+margin-left: 20px;
+font-family:'BebasNeue';
+font-size: 40px;
+
+
+}
+
+.ae1{
+width: 400px;
+grid-area: ae861;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 40px;
+margin-left: 90px;
+
+}
+.ae2{
+width: 400px;
+grid-area: ae862;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 80px;
+margin-left: 90px;
+
+}
+.ae3{
+width: 400px;
+grid-area: ae863;
+border: 2px solid rgb(0, 0, 0);
+margin-top: 80px;
+margin-left: 90px;
+}

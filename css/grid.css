@@ -1,0 +1,661 @@
+/*FUENTES*/
+@font-face {
+    font-family: "BebasNeue";
+    src: url(../font/BebasNeue-Regular.ttf);
+}
+
+.seccion_grilla{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.nosotros, .destacados, .pie{
+padding: 10px;
+}
+
+.grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:40px 300px 200px auto 40px;
+    grid-template-areas:
+    "franjanosotros nosotros destacados destacados destacadosfranja"
+    "franjanosotros nosotros imagenesnsx imagenesnsx destacadosfranja"
+    "baner baner baner baner baner"
+    "destacadosfranja2 destacadosrx7 destacadosrx7 destacadosrx7 destacadosrx7 "
+    "pie pie pie pie pie"
+    ;
+    max-width: 100%;
+}
+
+.franjanosotros{
+    grid-area:franjanosotros;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+.franjanosotros h2{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    margin-top: 200px;
+    letter-spacing: 20px;
+    color: white;
+    font-family:'BebasNeue';
+}
+
+
+.destacadosfranja{
+    grid-area: destacadosfranja;
+    background-color: rgba(0, 0, 0, 0.493)
+}
+.destacadosfranja2{
+    grid-area: destacadosfranja2;
+    background-color: rgba(0, 0, 0, 0.493)
+}
+
+.des1{
+  writing-mode: vertical-rl;
+    text-orientation: sideways;
+    margin-top: 170px;
+    letter-spacing: 20px;
+    font-family:'BebasNeue';
+    color: white;
+}   
+
+.des2{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    margin-top: 250px;
+    letter-spacing: 20px;
+    font-family:'BebasNeue';
+    color: white;
+} 
+.nosotros{
+    grid-area: nosotros;
+    margin-left: 40px;
+}
+
+.parrafo_nosotros{
+    grid-area: nosotros;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    height: 600px;
+    margin-top: 45px;
+}
+
+/*.titulo_nosotros{
+    grid-area: nos;
+    font-family:'BebasNeue';
+    font-size: 40px;
+
+}*/
+
+
+/*grid nxs*/
+.destacados{
+grid-area: destacados;
+display: grid;
+grid-template-columns:auto;
+grid-template-areas: "imagen parrafo";
+margin-left: 20px;
+max-width: 100%;
+}
+
+
+.imagen_nsx{
+    width: 700px;
+    border: 5px solid black;
+    grid-area: imagen;
+    margin-top: 30px;
+}
+
+.parrafo_nsx{
+    grid-area: parrafo;
+    border: 1px solid black;
+    padding: 10px;
+    height: 320px;
+    width: 628px;
+    margin-top: 75px;
+    font-size: 16px;
+}
+
+.titulo_nsx{
+    grid-area: parrafo;
+    font-family:'BebasNeue';
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+.imagenes_nsx{
+    grid-area: imagenesnsx;
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.foto1{
+width: 300px;
+border: 4px solid black;
+margin-left: 32px;
+
+}
+
+.foto2{
+width: 352px;
+border: 4px solid black;
+margin-left: 32px;
+
+
+}
+.foto3{
+    width: 331px;
+    border: 4px solid black;
+    margin-left: 32px;
+
+}
+
+.foto4{
+    width: 300px;
+    border: 4px solid black;
+    margin-left: 32px;
+}
+
+
+
+.baner{
+    grid-area: baner;
+    background-color: rgb(0, 0, 0);
+}
+.imagen_banner{
+width: 350px;
+margin-top: 50;
+margin-left: 40%;
+}
+
+/*grid rx7*/
+.destacadosrx7{
+    grid-area: destacadosrx7;
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-areas: 
+    "parraforx7 imagenrx7 curiosidad"
+     "imagenesrx7 imagenesrx7 curiosidad";
+    }
+    
+    .imagen_rx7{
+        width: 789px;
+        border: 5px solid black;
+        grid-area: imagenrx7;
+        margin-top: 60px;
+        margin-right: 10px;
+    }
+    
+    .parrafo_rx7{
+        grid-area: parraforx7;
+        border: 1px solid black;
+        padding: 5px;
+        height: 395px;
+        width: 500px;
+        margin-top: 60px;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    
+    
+    .titulo_rx7{
+        grid-area: parraforx7;
+        font-family:'BebasNeue';
+        font-size: 40px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .imagenes_rx7{
+        grid-area: imagenesrx7;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .rx71{
+        width: 320px;
+        border: 4px solid black;
+        margin-left: 50px;
+        
+    }
+    
+    .rx72{
+        width: 287px;
+        border: 4px solid black;
+        margin-left: 50px;
+        
+        
+    }
+    .rx73{
+        width: 270px;
+        border: 4px solid black;
+        margin-left: 50px;
+        
+    }
+    
+    .rx74{
+        width: 240px;
+        border: 4px solid black;
+        margin-left: 50px;
+    }
+
+    .curiosidad{
+        grid-area: curiosidad;
+        margin-top: 4px;
+        margin-right: 10px;
+        width: 390px;
+        padding-bottom: 10px;
+    }
+    .curiosidad h2{
+        grid-area: curiosidad;
+        font-family:'BebasNeue';
+        font-size: 40px;
+        margin-left: 195px;
+    }
+    .curiosidad p{
+    border: 1px solid black;
+    height: 365px;
+    width: 370px;
+    font-size: 16px;
+    padding: 10px;
+    }
+    
+    .hangfoto{
+        width:370px ;
+        border: 4px solid black;
+    }
+
+    
+/*PAGINAS NISSAN HONDA TOTOYA DISEÑOS*/
+      
+.gridsecciones{
+        display: grid;
+   grid-template-columns: auto;
+   grid-template-areas:
+   "bannersky"
+   "skyline"
+   "bannersil"
+   "silvia"
+   "banner300"
+   "zx" ;
+   border: 1px solid black;
+}
+
+/*BANNER SKYLINE*/
+.bannersky{
+    grid-area: bannersky;
+    background-color: rgb(207, 207, 207);
+    width: 100%;
+    height: 90px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.fotobannersky{
+    width: 150px;
+    margin-left: 850px;
+    margin-top: 2px;
+}
+
+/*SKYLINE SECCION*/
+.skylineseccion{
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    grid-area: skyline;
+    display: grid;
+    grid-template-columns: auto 300px auto;
+    grid-template-areas:
+    "parrafosky sky1 principalsky principalsky"
+    "parrafosky sky2 principalsky principalsky"
+    "parrafosky sky3 none none" ;
+}
+
+.imagen_sky{
+    width: 800px;
+    margin-top: 10px;
+    border: 4px solid rgb(0, 0, 0);
+    grid-area:principalsky;
+    margin-left: 300px;
+}
+.imagen_sky2{
+    width: 800px;
+    margin-top:10px;
+    border: 4px solid rgb(0, 0, 0);
+    margin-left:300px;
+    grid-area:principalsky;
+}
+.parrafoskyline{
+    grid-area: parrafosky;
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    width: 400px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+section .parrafoskyline p{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.tituloskyline{
+    grid-area: parrafosky;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    font-family:'BebasNeue';
+    font-size: 40px;
+    
+    
+}
+
+.imgs1{
+    width: 400px;
+    grid-area: imgs1;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 40px;
+    margin-left: 90px;
+    
+}
+.imgs2{
+    width: 400px;
+    grid-area: imgs2;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-left: 90px;
+    
+}
+.imgs3{
+    width: 400px;
+    grid-area: imgs3;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+
+
+
+
+
+/*SILVIA*/
+.bannersil{
+    grid-area: bannersil;
+    background-color: rgb(207, 207, 207);
+    width: 100%;
+    height: 90px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.fotobannersil{
+    width: 250px;
+    margin-left: 820px;
+    margin-top: 35px;
+}
+
+
+.silviaseccion{
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    grid-area: silvia;
+    display: grid;
+    grid-template-columns: auto 300px auto;
+    grid-template-areas:
+    "parrafosilvia silvia1 principalsilvia principalsilvia"
+    "parrafosilvia silvia2 principalsilvia principalsilvia"
+    "parrafosilvia silvia3 none none" ;
+}
+.imagen_silvia{
+    width: 800px;
+    margin-top: 10px;
+    border: 4px solid rgb(0, 0, 0);
+    grid-area:principalsilvia;
+    margin-left: 300px;
+}
+.imagen_silvia2{
+    width: 800px;
+    margin-top:10px;
+    border: 4px solid rgb(0, 0, 0);
+    margin-left:300px;
+    grid-area:principalsilvia;
+}
+.parrafosilvia{
+    grid-area: parrafosilvia;
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    width: 400px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+section .parrafosilvia p{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.titulosilvia{
+    grid-area: parrafosilvia;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    font-family:'BebasNeue';
+    font-size: 40px;
+    
+    
+}
+
+.silvia1{
+    width: 400px;
+    grid-area: silvia1;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 40px;
+    margin-left: 90px;
+    
+}
+.silvia2{
+    width: 400px;
+    grid-area: silvia2;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 80px;
+    margin-left: 90px;
+    
+}
+.silvia3{
+    width: 400px;
+    grid-area: silvia3;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 80px;
+    margin-left: 90px;
+}
+
+
+
+
+/*300ZX*/
+.banner300{
+    grid-area: banner300;
+    background-color: rgb(207, 207, 207);
+    width: 100%;
+    height: 90px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.fotobanner300{
+    width: 300px;
+    margin-left: 785px;
+    margin-top: 21px;
+}
+
+.zxseccion{
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    grid-area: zx;
+    display: grid;
+    grid-template-columns: auto 300px auto;
+    grid-template-areas:
+    "parrafo300 zx301 principal300 principal300"
+    "parrafo300 zx302 principal300 principal300"
+    "parrafo300 zx303 none none" ;
+}
+.imagen_300zx1{
+    width: 800px;
+    margin-top: 10px;
+    border: 4px solid rgb(0, 0, 0);
+    grid-area:principal300;
+    margin-left: 300px;
+}
+.imagen_300zx2{
+    width: 800px;
+    margin-top:10px;
+    border: 4px solid rgb(0, 0, 0);
+    margin-left:300px;
+    grid-area:principal300;
+}
+.parrafo300{
+    grid-area: parrafo300;
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    width: 400px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+section .parrafo300 p{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.titulo300{
+    grid-area: parrafo300;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    font-family:'BebasNeue';
+    font-size: 40px;
+    
+    
+}
+
+.zx1{
+    width: 400px;
+    grid-area: 301;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 40px;
+    margin-left: 90px;
+    
+}
+.zx2{
+    width: 400px;
+    grid-area: 302;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 80px;
+    margin-left: 90px;
+    
+}
+.zx3{
+    width: 400px;
+    grid-area: 303;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 80px;
+    margin-left: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.links a:hover {
+    color: #008cff;
+}
+
+.contacto,
+.suscripcion {
+    text-align: left;
+    padding: 10px;
+}
+
+.contacto h3,
+.suscripcion h3 {
+    margin-bottom: 10px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #7c7c7c;
+    color: #333;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #222;
+    color: #008cff;
+}
+
+.pie{
+grid-area: pie;
+background-color: rgb(85, 85, 85);
+}
