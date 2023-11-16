@@ -94,17 +94,15 @@ padding: 10px;
 
 }*/
 
-
 /*grid nxs*/
 .destacados{
-grid-area: destacados;
-display: grid;
-grid-template-columns:auto;
-grid-template-areas: "imagen parrafo";
-margin-left: 20px;
-max-width: 100%;
-}
-
+    grid-area: destacados;
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-areas: "imagen parrafo";
+    margin-left: 20px;
+    max-width: 100%;
+    }
 
 .imagen_nsx{
     width: 700px;
@@ -564,42 +562,6 @@ section .parrafo300 p{
     margin-top: 80px;
     margin-left: 90px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*FOOTER*/

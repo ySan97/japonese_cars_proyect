@@ -20,7 +20,6 @@ body {
     align-items: center;
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.479);
-    margin-left: 30%;
 }
 .logo_titulo h1{
     width: 1000px;
@@ -28,6 +27,7 @@ body {
     font-size: 70px;
     color: rgb(0, 0, 0);
     font-family:'BebasNeue';
+    margin-left: 22%;
 }
 .logo {
     width: 320px;
@@ -85,6 +85,16 @@ body {
     mix-blend-mode: overlay;
 }
 
+.baner2{
+    background-color: rgba(0, 0, 0, 0.493);
+    border-bottom: 2px solid black;
+}
+.imagen_banner2{
+width: 250px;
+margin-top: 50;
+margin-left: 45%;
+padding-bottom: 10px;
+}
 /*estilo BARRA DE NAVEGACION AUTOS*/
 
 .menu_cars{
@@ -204,3 +214,358 @@ nav i{
     padding-left: 70%;
     padding-top: 9px;
 }
+
+@media (max-width: 991px) {
+    .navbar-nav{
+        font-size: 25px;
+    }
+    .navbar-toggler{
+       height: 50px;
+       width: 70px;
+    }
+    .logo_titulo{
+        width: 992px;
+        height: 300px;
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-areas: "logo"
+        "titulo";
+    }
+    .logo {
+        width: 450px;
+        padding-top: 10px;
+        grid-area: logo;
+        margin-left: 280px;
+
+    }
+    .logo_titulo h1{
+        width: 100%;
+        font-size: 100px;
+        color: rgb(0, 0, 0);
+        font-family:'BebasNeue';
+        grid-area: titulo;
+        margin-left: 200px;
+    }
+}
+
+
+
+@media (max-width: 991px){
+    .grid{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns:40px auto 40px;
+        grid-template-areas:
+       "franjanosotros nosotros nosotros"
+       "baner2 baner2 baner2"
+       "destacadosfranja destacados destacados"
+       "destacadosfranja imagenesnsx imagenesnsx"
+       "baner baner baner"
+       "destacadosfranja2 destacadosrx7 destacadosrx7"
+       "curiosidad curiosidad curiosidad"
+       "pie pie pie"
+        ;
+        max-width: 100%;
+    }
+
+    .destacadosfranja{
+        grid-area: destacadosfranja;
+        background-color: rgba(0, 0, 0, 0.493)
+    }
+    .destacadosfranja2{
+        grid-area: destacadosfranja2;
+        background-color: rgba(0, 0, 0, 0.493)
+    }
+    .franjanosotros{
+        grid-area:franjanosotros;
+        background-color: rgba(0, 0, 0, 0.493);
+    height: 275px;
+    }
+    .franjanosotros h2{
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        margin-top: 47px;
+        letter-spacing: 15px;
+        color: white;
+        font-family:'BebasNeue';
+    }
+    
+    .des1{
+      writing-mode: vertical-rl;
+        text-orientation: sideways;
+        margin-top: 500px;
+        letter-spacing: 20px;
+        font-family:'BebasNeue';
+        color: white;
+    }   
+    
+    .des2{
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        margin-top: 250px;
+        letter-spacing: 20px;
+        font-family:'BebasNeue';
+        color: white;
+    } 
+    .nosotros{
+        grid-area: nosotros;
+    
+    }
+    
+    .parrafo_nosotros{
+        grid-area: nosotros;
+        border: 1px solid black;
+        font-size: 20px;
+        height: 190px;
+        width: 100%;
+    }
+   
+/*grid nxs*/
+.destacados{
+    grid-area: destacados;
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-areas: "imagen"
+    "parrafo";
+    margin-left: 20px;
+    max-width: 100%;
+    }
+
+.imagen_nsx{
+    width: 911px;
+    border: 5px solid black;
+    grid-area: imagen;
+}
+.parrafo_nsx{
+    grid-area: parrafo;
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    height: 350px;
+    font-size: 20px;
+}
+.titulo_nsx{
+    grid-area: parrafo;
+    font-family:'BebasNeue';
+    font-size: 40px;
+}
+.imagenes_nsx{
+    grid-area: imagenesnsx;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    
+}
+
+
+.foto1{
+    width: 350px;
+    border: 4px solid black;
+    margin-left: 80px;
+    
+    }
+    
+    .foto2{
+    width: 350px;
+    border: 4px solid black;
+    margin-left: 80px;
+    
+    
+    }
+    .foto3{
+        width: 350px;
+        border: 4px solid black;
+        margin-left: 80px;
+        margin-top: 20px;
+    
+    }
+    
+    .foto4{
+        width: 350px;
+        height: 200px;
+        border: 4px solid black;
+        margin-left: 80px;
+        margin-top: 15px;
+    }
+    
+    .baner{
+        grid-area: baner;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+    }
+    .imagen_banner{
+    width: 350px;
+    margin-top: 50;
+    margin-left: 35%;
+    }
+    .baner2{
+        width: 100%;
+        grid-area: baner2;
+        background-color: rgba(0, 0, 0, 0.493);
+    }
+    .imagen_banner2{
+        width: 350px;
+        margin-top: 50;
+        margin-left: 35%;
+        }
+    
+    /*grid rx7*/
+    .destacadosrx7{
+        grid-area: destacadosrx7;
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-areas: 
+        "imagenrx7"
+        "parraforx7"
+        "imagenesrx7"
+        "curiosidad";
+        }
+        
+        .imagen_rx7{
+            width: 911px;
+            border: 5px solid black;
+            grid-area: imagenrx7;
+            margin-left: 28px ;
+        }
+        
+        .parrafo_rx7{
+            grid-area: parraforx7;
+            border: 1px solid black;
+            padding: 10px;
+            width: 97%;
+            height: 390px;
+            font-size: 20px;
+        }
+        
+        
+        .titulo_rx7{
+            grid-area: parraforx7;
+            font-family:'BebasNeue';
+            font-size: 40px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+    
+        .imagenes_rx7{
+            grid-area: imagenesrx7;
+            width: 100%;
+            height: 100%;
+            padding-top: 35px;
+        }
+        
+        .rx71{
+            width: 400px;
+            border: 4px solid black;
+            margin-left: 60px;
+            
+        }
+        
+        .rx72{
+            width: 360px;
+            border: 4px solid black;
+            margin-left: 60px;
+            
+            
+        }
+        .rx73{
+            width: 400px;
+            border: 4px solid black;
+            margin-left: 60px;
+            margin-top: 20px;
+            
+        }
+        
+        .rx74{
+            width: 360px;
+            border: 4px solid black;
+            margin-left: 60px;
+            margin-top: 20px;
+        }
+    
+        .curiosidad{
+            grid-area: curiosidad;
+            margin-top: 4px;
+            width: 100%;
+            padding: 10px;
+        }
+        .curiosidad h2{
+            grid-area: curiosidad;
+            font-family:'BebasNeue';
+            font-size: 40px;
+            margin-left: 42%;
+        }
+        .curiosidad p{
+        border: 1px solid black;
+        height: 230px;
+        width: 100%;
+        font-size: 20px;
+        padding: 10px;
+     }
+        
+        .hangfoto{
+            width:100% ;
+            border: 4px solid black;
+            height: 500px;
+        }
+
+        /*FOOTER*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.links a:hover {
+    color: #008cff;
+}
+
+.contacto,
+.suscripcion {
+    text-align: left;
+    padding: 10px;
+}
+
+.contacto h3,
+.suscripcion h3 {
+    margin-bottom: 10px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #7c7c7c;
+    color: #333;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #222;
+    color: #008cff;
+}
+
+.pie{
+grid-area: pie;
+background-color: rgb(85, 85, 85);
+}
+
+}
+
